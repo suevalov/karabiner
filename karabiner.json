@@ -9,19 +9,19 @@
   "profiles": [
     {
       "simple_modifications": [
-        {
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "mandatory": ["command"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "f13"
-            }
-          ]
-        }
+        // {
+        //   "from": {
+        //     "key_code": "tab",
+        //     "modifiers": {
+        //       "mandatory": ["command"]
+        //     }
+        //   },
+        //   "to": [
+        //     {
+        //       "key_code": "f13"
+        //     }
+        //   ]
+        // }
       ],
       "complex_modifications": {
         "parameters": {
@@ -46,6 +46,26 @@
                   {
                     "key_code": "left_shift",
                     "modifiers": ["left_command", "left_control", "left_option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "manipulators": [
+              {
+                "description": "Change tab+command to option+spacebar.",
+                "from": {
+                  "key_code": "tab",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": ["left_option"]
                   }
                 ],
                 "type": "basic"
